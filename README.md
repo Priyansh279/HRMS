@@ -1,7 +1,5 @@
 # HRMS – Human Resource Management System
 
-hello this is priyansh
-
 A centralized, role-based MERN stack web application for managing employee lifecycle operations.
 
 ## Features
