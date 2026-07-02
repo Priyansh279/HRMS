@@ -1,0 +1,60 @@
+.employee-notices {
+  padding: 20px;
+}
+
+.notices-list {
+  display: grid;
+  gap: 16px;
+}
+
+.notice-card {
+  background: var(--bg-card);
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  transition: 0.2s;
+}
+
+.notice-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.notice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notice-header h2 {
+  font-size: 18px;
+}
+
+.notice-description {
+  margin: 10px 0;
+  color: #4b5563;
+}
+
+.notice-footer {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.notice-type {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.type-announcement {
+  margin-bottom: 1rem;
+}
+
+.type-holiday {
+  margin-bottom: 1rem;
+}
+
+.type-reminder {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,39 @@
+.employees-table .status-badge.status-paid {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--success);
+}
+
+.employees-table .status-badge.status-unpaid {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--error);
+}
+
+.employees-table td {
+  vertical-align: middle;
+}
+
+.salary-amount {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.employees-table button {
+  padding: 0.4rem 0.7rem;
+  font-size: 0.8rem;
+  border-radius: 6px;
+}
+
+.form-modal-content select {
+  padding: 0.6rem 0.75rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-primary);
+}
+
+@media (max-width: 640px) {
+  .employees-table th,
+  .employees-table td {
+    padding: 0.6rem;
+  }
+}

@@ -1,0 +1,64 @@
+.admin-attendance {
+  max-width: 900px;
+}
+
+.admin-attendance-filters {
+  margin-bottom: 1.5rem;
+}
+
+.admin-attendance-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.admin-attendance-filters select {
+  padding: 0.6rem 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  max-width: 280px;
+}
+
+.attendance-table-wrap {
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.admin-attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.admin-attendance-table th,
+.admin-attendance-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.admin-attendance-table th {
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+}
+
+.admin-attendance-table .badge {
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+.admin-attendance-table .badge.status-present { background: rgba(16, 185, 129, 0.2); color: var(--success); }
+.admin-attendance-table .badge.status-absent { background: rgba(100, 116, 139, 0.3); color: var(--text-muted); }
+.admin-attendance-table .badge.status-half-day { background: rgba(245, 158, 11, 0.2); color: var(--warning); }
+.admin-attendance-table .badge.status-leave { background: rgba(13, 148, 136, 0.2); color: var(--accent); }
+.admin-attendance-table .badge.status-holiday { background: rgba(99, 102, 241, 0.2); color: #818cf8; }

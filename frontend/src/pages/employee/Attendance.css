@@ -1,0 +1,104 @@
+.attendance-page {
+  max-width: 700px;
+}
+
+.attendance-actions {
+  margin-bottom: 2rem;
+}
+
+.today-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.today-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.today-times {
+  margin-bottom: 1rem;
+}
+.today-times p {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.text-muted {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-secondary {
+  padding: 0.7rem 1.25rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.btn-secondary:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.btn-secondary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.attendance-history h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.attendance-table {
+  list-style: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.attendance-table-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 100px;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg-secondary);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.attendance-table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 100px;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  align-items: center;
+}
+
+.attendance-table-row .badge {
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+.attendance-table-row .badge.status-present { background: rgba(16, 185, 129, 0.2); color: var(--success); }
+.attendance-table-row .badge.status-absent { background: rgba(100, 116, 139, 0.3); color: var(--text-muted); }
+.attendance-table-row .badge.status-half-day { background: rgba(245, 158, 11, 0.2); color: var(--warning); }
+.attendance-table-row .badge.status-leave { background: rgba(13, 148, 136, 0.2); color: var(--accent); }
+.attendance-table-row .badge.status-holiday { background: rgba(99, 102, 241, 0.2); color: #818cf8; }

@@ -1,0 +1,131 @@
+/* Page */
+.admin-exit {
+  max-width: 800px;
+}
+
+/* Pending count */
+.pending-count {
+  color: var(--warning);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* List */
+.admin-exit-list {
+  list-style: none;
+}
+
+/* Card Item */
+.admin-exit-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Main Row */
+.exit-item-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Employee Name */
+.emp-name {
+  font-weight: 600;
+  min-width: 140px;
+}
+
+/* Exit Date */
+.exit-date {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* Reason */
+.exit-reason {
+  flex: 1;
+  min-width: 0;
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Status Badge */
+.exit-item-main .badge {
+  margin-left: auto;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+
+/* Status Colors (same as leave) */
+.admin-exit-item.status-pending .badge {
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--warning);
+}
+
+.admin-exit-item.status-approved .badge {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--success);
+}
+
+.admin-exit-item.status-rejected .badge {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--error);
+}
+
+/* Actions */
+.exit-item-actions {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Approve Button */
+.btn-approve {
+  padding: 0.5rem 1rem;
+  background: var(--success);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn-approve:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.btn-approve:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Reject Button */
+.btn-reject {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.btn-reject:hover:not(:disabled) {
+  background: rgba(239, 68, 68, 0.15);
+}
+
+.btn-reject:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

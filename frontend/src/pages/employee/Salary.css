@@ -1,0 +1,57 @@
+.salary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.salary-card {
+  transition: transform 0.2s ease;
+}
+
+.salary-card:hover {
+  transform: translateY(-3px);
+}
+
+.salary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.salary-header h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.profile-details dd strong {
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.download-btn {
+  margin: 1.5rem;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: none;
+  background: var(--accent);
+  color: var(--bg-primary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+  opacity: 0.9;
+}
+
+.status-badge.status-paid {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--success);
+}
+
+.status-badge.status-unpaid {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--error);
+}
